@@ -2,11 +2,10 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #1e1d1d;
+  background-color: black;
 }
 
 nav {
-  color: #fff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -17,7 +16,7 @@ header {
   text-align: center;
 }
 
-h2, p {
+h2, h1, p {
     color: white;
 }
 
@@ -36,14 +35,7 @@ h1 {
 }
 
 .login-btn {
-  background-color: #00b894;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+
 }
 
 .login-btn:hover {
@@ -59,8 +51,25 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-    .search-container {
-      position: relative;
-      width: 300px;
-      margin: 50px;
-    }
+.search-container {
+  position: relative;
+  width: 300px;
+  margin: 50px;
+  margin-left: 300px;
+  top: 5px;
+}
+
+.input-btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 900px;
+}
+
+.search-icon {
+  padding: 12px 20px;
+}
+
+li {
+  color: white;
+}

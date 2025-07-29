@@ -5,17 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DevConnect</title>
         <link rel="stylesheet" href="/Styles/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <nav>
             <h1>DevConnect</h1>
-            <button id="loginBtn" class="login-btn">Login</button>
+            <ul>
+                <li></li>
+                <li></li>
+                <li>Jobs</li>
+                <li>Help</li>
+            </ul>
+            <p>Sigin in</p>
         </nav>
 
         
         <div class="search-container">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" placeholder="Search for job" id="job-search" />
+            <input 
+                type="text" placeholder="Search for job" 
+                id="job-search" 
+                class="input-btn"
+            />
+            <button search-icon>
+                <i class="fa fa-search"></i>
+            </button>
         </div>
 
         <header>
@@ -25,7 +39,7 @@
 
         <section id="jobsContainer"></section>
 
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
         <script src="/Scripts/script.js"></script>
     </body>
 </html>

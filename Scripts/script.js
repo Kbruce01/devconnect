@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobs = [
     { title: "Frontend Developer", company: "Google", location: "Remote" },
     { title: "Backend Engineer", company: "Meta", location: "USA" },
-     { title: "UI/UX Designer", company: "Apple", location: "Hybrid" },
+    { title: "UI/UX Designer", company: "Apple", location: "Hybrid" },
+    { title: "Full-Stack Developer", company: "Devops", location: "Remote"},
   ];
 
   const container = document.getElementById("jobsContainer");
