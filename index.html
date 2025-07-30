@@ -5,19 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DevConnect</title>
         <link rel="stylesheet" href="/Styles/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
 
     </head>
     <body>
         <nav>
             <h1>DevConnect</h1>
-            <ul>
-                <li></li>
-                <li></li>
-                <li>Jobs</li>
-                <li>Help</li>
+            <ul class="list-style-type: none;">
+                <li>Find Jobs</li>
+                <li>For Employers</li>
             </ul>
-            <p>Sigin in</p>
+            <div class="login-section">
+                <p>Login</p>
+                <p>Sign Up</p>
+            </div>
         </nav>
 
         
@@ -27,17 +32,61 @@
                 id="job-search" 
                 class="input-btn"
             />
-            <button search-icon>
+            <button class="search-icon">
                 <i class="fa fa-search"></i>
             </button>
         </div>
 
         <header>
             <h2>Welcome to DevConnect!</h2>
-            <p>Land your dream tech job</p>
+            <p>Land your dream tech job or <span>Perfect Hire</span></p>
+
+            <button class="post-job-btn">
+                <i class="fas fa-search"></i>
+                Find Jobs
+                <i class="fas fa-arrow-right"></i>
+             </button>
+
+             <button class="post-a-job-btn">
+                Post a Job
+            </button>
+            
         </header>
 
-        <section id="jobsContainer"></section>
+        <section class="container">
+            <div class="user-icon"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                </svg>
+                <a>200K+</a>
+
+                Users
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+                </svg>
+                <a>103K+</a>
+
+                Companies
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                </svg>
+                <a>100K+</a>
+
+                Jobs Posted
+            </div>
+        </section>
+
+        <section class="all-you-need">
+            <h2>
+                Everything You Need in 
+                <span class="break-line">One Place</span>
+            </h2>
+            <p>Ready to land your dream job or hire exceptional talent? With powerful tools and smart features, <br>our platform helps you make it happen.</br></p>
+        </section>
 
 
         <script src="/Scripts/script.js"></script>

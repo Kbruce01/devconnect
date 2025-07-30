@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   const jobs = [
     { title: "Frontend Developer", company: "Google", location: "Remote" },
     { title: "Backend Engineer", company: "Meta", location: "USA" },
@@ -18,4 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     container.appendChild(div);
   });
-});
+}); 
+
+*/
