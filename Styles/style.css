@@ -13,22 +13,8 @@ nav {
   position: sticky;
   z-index: 100;
   top: 0;
-  background: linear-gradient(to left, thistle, #ffffff);
+  background: linear-gradient(to left, rgb(243, 242, 243), #ffffff);
 }
-
-select{
-  background-color: inherit;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  font-size: 12px;
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-}
-
-
 
 header {
   padding: 2rem;
@@ -98,7 +84,7 @@ ul li {
   padding: 10px 12px;
   border-radius: 5px;
   background-color: rgba(0, 132, 255, 0.3);
-  backdrop-filter: blur(10px); /* adds the frosted/mirror effect */
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 132, 255, 0.2);
   cursor: pointer;
@@ -207,9 +193,22 @@ p {
   border-radius: 6px;
   border: 1px solid gray;
   background-color: rgba(0, 132, 255, 0.3);
-  backdrop-filter: blur(10px); /* adds the frosted/mirror effect */
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 132, 255, 0.2);
+}
+
+.toggle-btn {
+  height: 35px;
+  margin-top: 18px;
+  min-width: 30px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  background-color: rgb(246, 246, 246);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(203, 209, 214, 0.2);
 }
 
 .login-btn,

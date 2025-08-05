@@ -6,10 +6,10 @@
         <title>DevConnect</title>
         <link rel="stylesheet" href="/Styles/style.css" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
 
     </head>
     <body>
@@ -20,12 +20,9 @@
                 <li>For Employers</li>
             </ul>
             <div class="login-section">
-               <span><select>
-<option>🌑Dark mode</option>
-<option>🌕Light mode</option>
-                </select></span>
-                <button class="login-btn">Login</button>
-                <button class="signup-btn">Sign Up</button>
+               <button class="toggle-btn"><i class="ri-moon-line" style="font-size: 20px;"></i></button>
+                <button id="loginBtn" class="login-btn">Login</button>
+                <button id="signupBtn" class="signup-btn">Sign Up</button>
             </div>
         </nav>
 
@@ -118,9 +115,17 @@
 
         <div class="about-services">
             <p>Copyright - 2025</p>
-            <p></p>
+            <p>Devconnect Services</p>
         </div>
 
-        <script src="/Scripts/script.js"></script>
+        <script src="/Scripts/main.js" type="module"></script>
+        <script src="/Scripts/SignUpForm.js" type="module"></script>
+        <script src="/Scripts/LoginForm.js" type="module"></script>
     </body>
 </html>
+
+
+
+
+
+
