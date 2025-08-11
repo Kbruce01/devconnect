@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       toggleBtn.querySelector('i').style.color = '#ffe066';
       // Navbar dark mode
       if (navbar) {
-        navbar.style.background = '#23243a';
+        navbar.style.background = '#2b2c30ff';
         navbar.style.color = '#f3f2f3';
       }
       // Modal backgrounds
