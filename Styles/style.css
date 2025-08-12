@@ -254,3 +254,161 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+
+
+
+/* Overlay */
+#modalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(72, 105, 226, 0.12);
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background: linear-gradient(120deg, #f3f2f3 0%, #eaf1ff 100%);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(72, 105, 226, 0.1);
+  min-width: 340px;
+  max-width: 95vw;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #0077ff;
+  cursor: pointer;
+}
+
+/* Headings and subtitles */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styles */
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input group (icon + input) */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  height: 25px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="file"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 100%;
+  font-size: 1rem;
+  padding-left: 10px;
+  background: transparent;
+}
+
+.input-group .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
+  min-width: 24px;
+  margin-right: 8px;
+}
+
+.input-group svg {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+/* Options for radio selectors */
+.options {
+  display: flex;
+  gap: 16px;
+}
+
+.options label {
+  flex: 1;
+  text-align: center;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #005fcc;
+}
+
+/* the page links */
+.login-link {
+  justify-content: center;
+  display: flex;
+}
+
+.login-link a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 3px;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.login-link a:hover {
+  background: #eaf1ff;
+  color: #005fcc;
+}

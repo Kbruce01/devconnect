@@ -118,108 +118,123 @@
             <p>Devconnect Services</p>
         </div>
 
+          <!-- Modal Overlay -->
+  <div id="modalOverlay"></div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+    <button id="closeSignupModal" class="close-btn">&times;</button>
+    <div class="signup-container">
+      <h1>Create Account</h1>
+      <p class="subtitle">Let devconnect help you find your dream job</p>
+      <form>
+        <div class="form-group">
+          <label for="fullName">Full Name*</label>
+          <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" id="fullName" placeholder="Enter your full name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address*</label>
+          <div class="input-group">
+            <span class="icon">
+              <!-- Email SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </span>
+            <input type="email" id="email" placeholder="Enter a valid email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password*</label>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="password" placeholder="Create a strong password" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="profile">Profile (optional)</label>
+          <div class="input-group">
+            <input type="file" id="profile" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>I am a*</label>
+          <div class="options">
+            <label><input type="radio" name="role" required /> Job Seeker</label>
+            <label><input type="radio" name="role" required /> Employer</label>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+      </form>
+
+      <p class="login-link">
+        Already have an account?
+        <a id="showLoginLink" href="#">Sign in here</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <button id="closeLoginModal" class="close-btn">&times;</button>
+    <div class="loginBtn-container">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Sign in to your devconnect account</p>
+      <form>
+        <div class="form-group">
+          <label for="loginEmail">Email Address*</label>
+          <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="email" id="loginEmail" placeholder="Enter your email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Password*</label>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required />
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Sign In</button>
+      </form>
+
+      <p class="login-link">
+        Don't have an account?
+        <a id="showSignupLink" href="#">Sign up here</a>
+      </p>
+    </div>
+  </div>
+
+        
+
         <script src="/Scripts/SignUpForm.js" type="module"></script>
         <script src="/Scripts/LoginForm.js" type="module"></script>
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-        <!-- Modal Overlay -->
-        <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(72,105,226,0.12); z-index:1000;"></div>
-
-        <!-- Signup Modal -->
-        <div id="signupModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1001; background:linear-gradient(120deg, #f3f2f3 0%, #eaf1ff 100%); padding:2.5rem 2rem; border-radius:16px; box-shadow:0 8px 32px rgba(72,105,226,0.10); min-width:340px; max-width:95vw;">
-          <button id="closeSignupModal" style="position:absolute; top:18px; right:22px; font-size:2rem; background:none; border:none; color:#0077ff; cursor:pointer;">&times;</button>
-          <div class="signup-container">
-            <h1 style="text-align:center; margin-bottom:10px;">Create Account</h1>
-            <p class="subtitle" style="text-align:center; color:#666; margin-bottom:24px;">Let devconnect help you find your dream job</p>
-            <form>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Full Name*</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="text" placeholder="Enter your full name" required />
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Email Address*</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="email" placeholder="Enter a valid email" required />
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Password*</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="password" placeholder="Create a strong password" required />
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Profile (optional)</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="file" />
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">I am a*</label>
-                <div class="options" style="flex:1; display:flex; gap:16px;">
-                  <label class="option" style="flex:1; text-align:center;"><input type="radio" name="role" required /> Job Seeker</label>
-                  <label class="option" style="flex:1; text-align:center;"><input type="radio" name="role" required /> Employer</label>
-                </div>
-              </div>
-              <button type="submit" style="width:100%; margin-top:10px;">Create Account</button>
-            </form>
-            <p class="login-link" style="margin-top:18px; text-align:center;">
-              Already have an account? 
-              <a id="showLoginLink" href="#" style="color:#0077ff; text-decoration:none; font-weight:500; padding:2px 8px; border-radius:5px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#eaf1ff';this.style.color='#005fcc'" onmouseout="this.style.background='';this.style.color='#0077ff'">Sign in here</a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Login Modal -->
-        <div id="loginModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1001; background:linear-gradient(120deg, #f3f2f3 0%, #eaf1ff 100%); padding:2.5rem 2rem; border-radius:16px; box-shadow:0 8px 32px rgba(72,105,226,0.10); min-width:340px; max-width:95vw; ">
-          <button id="closeLoginModal" style="position:absolute; top:18px; right:22px; font-size:2rem; background:none; border:none; color:#0077ff; cursor:pointer;">&times;</button>
-          <div class="loginBtn-container">
-            <h1 style="text-align:center; margin-bottom:10px;">Welcome Back</h1>
-            <p class="login-subtitle" style="text-align:center; color:#666; margin-bottom:24px;">Sign in to your devconnect account</p>
-            <form>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Email Address*</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="email" placeholder="Enter a valid email" required />
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:18px; margin-bottom:16px;">
-                <label style="width:120px; text-align:right;">Password*</label>
-                <div class="input-group" style="flex:1;">
-                  <span class="icon"></span>
-                  <input type="password" placeholder="Create a strong password" required />
-                </div>
-              </div>
-              <button type="submit" style="width:100%; margin-top:10px;">Sign In</button>
-            </form>
-            <p class="login-link" style="margin-top:18px; text-align:center;">
-              Don't have an account? 
-              <a id="showSignupLink" href="#" style="color:#0077ff; text-decoration:none; font-weight:500; padding:2px 8px; border-radius:5px; transition:background 0.2s, color 0.2s;" onmouseover="this.style.background='#eaf1ff';this.style.color='#005fcc'" onmouseout="this.style.background='';this.style.color='#0077ff'">Sign up here</a>
-            </p>
-          </div>
-        </div>
-
         <script src="/Scripts/main.js" type="module"></script>
-        <script src="/Scripts/SignUpForm.js" type="module"></script>
-        <script src="/Scripts/LoginForm.js" type="module"></script>
     </body>
+
+
+    
+
+
+    
+
+
 </html>
+
+
+        
+
 
 
 
