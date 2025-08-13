@@ -297,7 +297,7 @@ p {
   cursor: pointer;
 }
 
-/* Headings and subtitles */
+
 h1 {
   text-align: center;
   margin-bottom: 10px;
@@ -323,7 +323,7 @@ h1 {
   color: #333;
 }
 
-/* Input group (icon + input) */
+/* Input group (icon and input) */
 .input-group {
   display: flex;
   align-items: center;

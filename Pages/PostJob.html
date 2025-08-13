@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="/Styles/PostJob.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Post a New Job</h1>
+        <p>Fill out the form below to create your job post</p>
+        
+        <form id="jobForm">
+            <label for="title">Job Title *</label>
+            <input type="text" id="title" placeholder="e.g. Full-Stack Developer" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="e.g. Accra, Ghana">
+
+            <label for="category">Category *</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Development">Development</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+
+            <label for="jobType">Job Type *</label>
+            <select id="jobType" required>
+                <option value="">Select Job Type</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+            </select>
+
+            <label for="description">Job Description *</label>
+            <textarea id="description" placeholder="Describe role and responsibilities" required></textarea>
+
+            <label for="requirements">Requirements *</label>
+            <textarea id="requirements" placeholder="List required skills and qualifications" required></textarea>
+
+            <label>Salary Range *</label>
+            <div class="row">
+                <div class="column">
+                    <input type="number" id="salaryMin" placeholder="₵ Min" required>
+                </div>
+                <div class="column">
+                    <input type="number" id="salaryMax" placeholder="₵ Max" required>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="preview-btn">Preview</button>
+                <button type="submit" class="post-btn">Post Job</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/Scripts/PostJob.js"></script>
+</body>
+</html>

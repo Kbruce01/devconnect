@@ -1,23 +1,20 @@
 
 // Modal logic for signup/login
-function showModal(type) {
+export function showModal(type) {
   document.getElementById('modalOverlay').style.display = 'block';
   document.body.style.overflow = 'hidden';
-  if (type === 'signup') {
-    document.getElementById('signupModal').style.display = 'block';
-    document.getElementById('loginModal').style.display = 'none';
-  } else {
-    document.getElementById('signupModal').style.display = 'none';
-    document.getElementById('loginModal').style.display = 'block';
-  }
-}
+  document.getElementById('signupModal').style.display = type === 'signup' ? 'block' : 'none';
+  document.getElementById('loginModal').style.display = type === 'signup' ? 'none' : 'block';
 
-function hideModal() {
-  document.getElementById('modalOverlay').style.display = 'none';
-  document.getElementById('signupModal').style.display = 'none';
-  document.getElementById('loginModal').style.display = 'none';
+};
+
+export function hideModal() {
+  ['modalOverlay', 'signupModal', 'loginModal'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
   document.body.style.overflow = '';
-}
+};
 
 export function setUpSignupForm() {
   // Open signup modal
@@ -42,10 +39,14 @@ export function setUpSignupForm() {
     showModal('signup');
     window.history.pushState({page: 'signup'}, '', '#signup');
   });
+  
+  
   // Close modals
-  document.getElementById('closeSignupModal').addEventListener('click', hideModal);
-  document.getElementById('closeLoginModal').addEventListener('click', hideModal);
-  document.getElementById('modalOverlay').addEventListener('click', hideModal);
+  ['closeSignupModal', 'closeLoginModal', 'modalOverlay'].forEach(id => {
+   document.getElementById(id)?.addEventListener('click', hideModal);
+  });
+  
+  
   // Handle browser back button
   window.addEventListener('popstate', (event) => {
     if (!event.state || !event.state.page) {
@@ -56,6 +57,6 @@ export function setUpSignupForm() {
       showModal('login');
     }
   });
-}
+};
 
 setUpSignupForm();

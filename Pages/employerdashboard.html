@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="/Styles/employerdashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+
+        <!-- header -->
+        <header class="dashboard-header">
+            <div class="logo">DevConnect</div>
+            <div class="header-right">
+                <span class="welcome-text">Welcome, Employer</span>
+                <button class="notif-btn">🔔</button>
+                <div class="profile-pic">E</div>
+            </div>
+        </header>
+
+        <div class="dashboard-body">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <ul>
+                    <li class="active"> Dashboard</li>
+                    <li onclick="location.href='PostJob.html'">➕ Post a Job</li>
+                    <li> Manage Jobs</li>
+                    <li> Company Profile</li>
+                </ul>
+                <button class="logout"> Logout</button>
+            </aside>
+
+            <!-- Main content -->
+            <main class="main-content">
+                <!-- Top stats -->
+                <div class="stats">
+                    <div class="stat-card">Active Jobs</div>
+                    <div class="stat-card">Applicants</div>
+                    <div class="stat-card">Hired</div>
+                </div>
+
+                <!-- Job posts and applications -->
+                <div class="grid">
+                    <div class="box">
+                        <h3>Recent Job Posts</h3>
+                        <div id="jobList"></div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Recent Applications</h3>
+                        <div class="app-card">Richard Appah - Frontend Dev</div>
+                        <div class="app-card">Oscar Aidoo - UI Designer</div>
+                        <div class="app-card">Kilu Enock - Backend Dev</div>
+                    </div>
+                </div>
+
+                <!-- quick actions -->
+                <div class="quick-actions">
+                    <button onclick="location.href='PostJob.html'">➕ Post New Job</button>
+                    <button> Review Applications</button>
+                    <button> Settings</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/Scripts/employerdashboard.js"></script>
+</body>
+</html>

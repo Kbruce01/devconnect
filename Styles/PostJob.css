@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #444;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.column {
+    flex: 1;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.preview-btn {
+    background-color: #eee;
+    color: #333;
+}
+
+.post-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.post-btn:hover {
+    background-color: #0056b3;
+}
