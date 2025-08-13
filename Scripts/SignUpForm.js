@@ -3,16 +3,19 @@
 export function showModal(type) {
   document.getElementById('modalOverlay').style.display = 'block';
   document.body.style.overflow = 'hidden';
-  document.getElementById('signupModal').style.display = type === 'signup' ? 'block' : 'none';
-  document.getElementById('loginModal').style.display = type === 'signup' ? 'none' : 'block';
+  if (type === 'signup') {
+    document.getElementById('signupModal').style.display = 'block';
+    document.getElementById('loginModal').style.display = 'none';
+  } else {
+    document.getElementById('signupModal').style.display = 'none';
+    document.getElementById('loginModal').style.display = 'block';
+  }
+}
 
-};
-
-export function hideModal() {
-  ['modalOverlay', 'signupModal', 'loginModal'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = 'none';
-  });
+function hideModal() {
+  document.getElementById('modalOverlay').style.display = 'none';
+  document.getElementById('signupModal').style.display = 'none';
+  document.getElementById('loginModal').style.display = 'none';
   document.body.style.overflow = '';
 };
 

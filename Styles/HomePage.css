@@ -1,4 +1,5 @@
 
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -411,4 +412,18 @@ h1 {
 .login-link a:hover {
   background: #eaf1ff;
   color: #005fcc;
+}
+
+
+/* Blur effect for modal background - targets main content, not modals/overlay */
+.blur nav,
+.blur .search-container,
+.blur header,
+.blur .container,
+.blur .all-you-need,
+.blur .divs,
+.blur .main-container,
+.blur .about-services {
+  filter: blur(4px) brightness(0.95);
+  transition: filter 0.3s;
 }
