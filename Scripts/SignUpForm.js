@@ -3,6 +3,7 @@
 function showModal(type) {
   document.getElementById('modalOverlay').style.display = 'block';
   document.body.style.overflow = 'hidden';
+  document.body.classList.add('blur'); // Add blur effect to body
   if (type === 'signup') {
     document.getElementById('signupModal').style.display = 'block';
     document.getElementById('loginModal').style.display = 'none';
@@ -16,6 +17,7 @@ function hideModal() {
   document.getElementById('modalOverlay').style.display = 'none';
   document.getElementById('signupModal').style.display = 'none';
   document.getElementById('loginModal').style.display = 'none';
+  document.body.classList.remove('blur'); // Remove blur effect from body
   document.body.style.overflow = '';
 }
 

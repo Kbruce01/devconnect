@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Modal backgrounds
       const modals = document.querySelectorAll('#signupModal, #loginModal');
       modals.forEach(modal => {
-        modal.style.background = 'linear-gradient(120deg, #23243a 0%, #181a20 100%)';
+        document.body.classList.add('blur'); // Apply blur effect
+        modal.style.display = 'block'; // Ensure modals are visible
+        modal.style.background = 'blur(15px) brightness(0.95)';
         modal.style.color = '#f3f2f3';
       });
     } else {
@@ -34,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
       modals.forEach(modal => {
         modal.style.background = 'linear-gradient(120deg, #f3f2f3 0%, #eaf1ff 100%)';
         modal.style.color = '';
+        document.body.classList.remove('blur');
       });
     }
   });
